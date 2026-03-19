@@ -1,0 +1,69 @@
+{
+  "name": "vite-plugin-better-mock-server",
+  "version": "0.1.0",
+  "description": "A Vite plugin for mock server powered by better-mock-server",
+  "type": "module",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "mock",
+    "mock-server",
+    "h3"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/coderking3/vite-plugin-better-mock-server#readme",
+  "bugs": {
+    "url": "https://github.com/coderking3/vite-plugin-better-mock-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderking3/vite-plugin-better-mock-server.git"
+  },
+  "author": "king3 <king3.wm@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "play": "vite playground",
+    "release": "bumpp"
+  },
+  "peerDependencies": {
+    "better-mock-server": "^1.4.0",
+    "vite": "^5.0.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "tinyglobby": "^0.2.0"
+  },
+  "devDependencies": {
+    "@king-3/eslint-config": "latest",
+    "@king-3/prettier-config": "latest",
+    "@types/node": "^25.5.0",
+    "better-mock-server": "^1.4.1",
+    "bumpp": "^11.0.1",
+    "eslint": "latest",
+    "h3": "2.0.1-rc.16",
+    "prettier": "^3.7.1",
+    "tsdown": "latest",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vitest": "latest"
+  }
+}
